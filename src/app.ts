@@ -4,7 +4,7 @@ import {ROUTER_PROVIDERS, PathLocationStrategy, LocationStrategy} from 'angular2
 
 import {Ng2CodelabApp} from './app/ng2-codelab';
 
-bootstrap(Ng2CodelabApp,[
-  ROUTER_PROVIDERS,
-	provide(LocationStrategy, {useClass: PathLocationStrategy})
+bootstrap(Ng2CodelabApp, [
+    ROUTER_PROVIDERS,
+    provide(LocationStrategy, {useClass: PathLocationStrategy})
 ]);
