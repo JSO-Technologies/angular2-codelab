@@ -1,0 +1,11 @@
+<div>
+    <div class="mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+        <div class="mdl-card__supporting-text">
+            <h4>Your score is 5/10</h4>
+        </div>
+    </div>
+</div>
+<question-card
+        *ngFor="#question of questions"
+        [question]="question"
+        [preview]="true" ></question-card>
