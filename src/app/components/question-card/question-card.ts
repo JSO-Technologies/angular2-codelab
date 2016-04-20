@@ -3,6 +3,7 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
 
 import {IQuestion, IChoice} from '../../services/question-store/question-store';
 import { MarkPipe } from '../../pipes/mark-pipe/mark-pipe';
+import {StatusDirective} from "../../directives/status-directive/status-directive";
 
 @Component({
   selector: 'question-card',
@@ -16,7 +17,7 @@ import { MarkPipe } from '../../pipes/mark-pipe/mark-pipe';
 	`],
   encapsulation: ViewEncapsulation.None,
   templateUrl: './app/components/question-card/question-card.html',
-  directives: [ROUTER_DIRECTIVES],
+  directives: [ROUTER_DIRECTIVES, StatusDirective],
   pipes: [MarkPipe]
 })
 export class QuestionCard implements AfterViewInit {
